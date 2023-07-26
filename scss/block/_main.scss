@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.button{
+    width: 300px;
+    height: 100px;
+    font-size: 40px;
+    font-weight: 700;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #F45070;
+}
+p{
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.first{
+    transition: 0.5s;
+    margin-right: -100px;
+}
+button:hover .first{
+    transform: translateX(500px);
+}
+
+.last{
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateX(-500px);
+}
+button:hover .last{
+    opacity: 1;
+    transform: translateX(-30px);
+}
+i{
+    font-size: 40px;
+}
